@@ -39,7 +39,7 @@ $count=count($cidades);
 		<select id="cidade" name="cidade" required>
 			<?php 
 				foreach($cidades as $cidade){
-					$cidade['nomeCidade']=utf8_encode($cidade['nomeCidade']);
+					//$cidade['nomeCidade']=utf8_encode($cidade['nomeCidade']);
 					?>
 					<option value='<?php echo $cidade["idCidade"]; ?>' <?php if($cidade['idCidade']==$dadosUsuario->cidade) echo 'selected';?>><?php echo $cidade['nomeCidade']; ?></option>";
 				<?php
