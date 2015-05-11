@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 if(isset($_COOKIE['usuario'])){
 $usuario=$_COOKIE['usuario'];
 }
@@ -8,7 +8,7 @@ $usuario=$_COOKIE['usuario'];
 <!DOCTYPE html >
 <html lang="pt-br" >
     <head>
-        <meta charset="iso-8859-1" />
+        <meta charset="utf-8" />
         <title>YearBook - Especialização em Desenvolvimento Web- PUC MG</title>
 
         <link rel="stylesheet" href="css/estilo.css" />
