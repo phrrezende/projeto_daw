@@ -1,9 +1,8 @@
-<?php 
+﻿<?php 
 if(isset($_COOKIE['usuario'])){
 $usuario=$_COOKIE['usuario'];
 }
 
-	
 ?>
 <!DOCTYPE html >
 <html lang="pt-br" >
@@ -11,8 +10,68 @@ $usuario=$_COOKIE['usuario'];
         <meta charset="utf-8" />
         <title>YearBook - Especialização em Desenvolvimento Web- PUC MG</title>
 
-        <link rel="stylesheet" href="css/estilo.css" />
+         
 		<link href="css/normaliza.css" rel="stylesheet">
+		 <link rel="stylesheet" href="css/estilo.css" />  
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var ajax;
+			
+			function iniciaAjax(){
+				if(window.XMLHttpRequest){
+					ajax= new XMLHttpRequest();
+					
+				}
+				else if(window.activeXObject){
+					
+					ajax= new ActiveXObject("Msxml2.XMLHTTP");
+					if(!ajax){
+						ajax= new ActiveXObject("Microsoft.XMLHTTP");
+					}
+				}
+				else{
+					alert("Seu navegador não possui suporte para esta aplicação!");
+				}
+				return ajax;
+			}
+			window.onload= function(){
+				document.getElementById('estado').onchange=buscaCidade;
+				
+			};
+			
+			function buscaCidade(){
+				ajax= iniciaAjax();
+				
+				if(ajax){
+					ajax.onreadystatechange= function(){
+						if(ajax.readyState==4){
+							if(ajax.status==200){
+								//carregar o select com as cidades
+								var cidades=ajax.responseText;
+								document.getElementById('cidade').innerHTML=cidades;
+	
+							}
+							else{
+								alert(ajax.statusText);
+							}
+						}
+						
+					}
+				var estado= document.getElementById('estado').value;
+				
+				dados='estado='+estado;
+				
+				ajax.open('POST','buscaCidade.php',true);
+				ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+				ajax.send(dados);
+					
+				}
+				
+				
+				
+			}
+		</script>
+		
 
     </head>
 	<body>
