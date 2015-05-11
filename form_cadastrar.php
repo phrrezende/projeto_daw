@@ -33,15 +33,22 @@ $count= count($estados);
     <label for="senha">Senha:</label>
     <input type="password" name="senha" required />
 </div>
+	<div>
+		<label for="estado">Estado:</label>
+		<select id="estado" name="estado" required>
+		<?php 
+		foreach($estados as $estado){
+			$estado['nomeEstado']=utf8_encode($estado['nomeEstado']);
+			echo "<option value='$estado[idEstado]'>$estado[nomeEstado]</option>";
+		
+		}
+		?>
+		</select>
+	</div>
 <div>
     <label for="cidade">Cidade:</label>
 	<select id="cidade" name="cidade" required>
-	<?php 
-	foreach($cidades as $cidade){
-		$cidade['nomeCidade']=utf8_encode($cidade['nomeCidade']);
-		echo "<option value='$cidade[idCidade]'>$cidade[nomeCidade]</option>";
-	}
-	?>
+
 	</select>
 </div>
 <div>
