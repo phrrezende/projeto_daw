@@ -8,7 +8,7 @@ $usuario=$_COOKIE['usuario'];
 <!DOCTYPE html >
 <html lang="pt-br" >
     <head>
-        <meta charset="utf-8" />
+        <meta charset="iso-8859-1" />
         <title>YearBook - Especialização em Desenvolvimento Web- PUC MG</title>
 
         <link rel="stylesheet" href="css/estilo.css" />
