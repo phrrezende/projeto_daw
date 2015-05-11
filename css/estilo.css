@@ -1,0 +1,228 @@
+    html{
+    background-color: #444;  
+    width:100%;
+    }
+
+    body{
+    font-family:  sans-serif;
+    margin: 0;
+    margin: 1em auto;   
+    text-align: center;
+    background-color: #ccc;
+    width:95%;
+    }
+
+    
+
+    header h1{
+    border-style: solid;
+    border-width: thin;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    text-align:center;
+    <!--border-radius: 2em;-->
+    box-shadow: 5px 2px 10px #444;
+    color: #666;
+    background-image: url(../imgs/logo_puc.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+    border-bottom-width: thick;
+    border-top-width: thick;
+    
+    }   
+
+    ul{
+    list-style: none;
+    display: inline;
+    padding: 2px;
+    }
+
+    section li{
+    float: left;
+    text-align: center;
+    <!--margin: 1em;-->
+    }
+
+    li img {
+    width:90px;
+    height: 90px;
+    border-radius: 1em;
+    box-shadow: 5px 5px 30px #444;
+
+    }
+	
+	#tumbnails{
+		width:150px;
+		height: 150px;	
+		
+	}
+
+    li figcaption{
+    padding: 5px;  
+    margin-top: 2px;
+    }
+
+    li a{
+    text-decoration: none;  
+    color: #444;
+    }
+
+    li a:hover img{
+    box-shadow: 5px 5px 30px #ccc;
+    }
+
+    footer{
+    clear:both;
+    font-size: small;   
+    text-align: center;
+    }
+    
+#img-pessoa{
+    float:left;   
+    box-shadow: 5px 5px 30px #444;
+}
+#img-usuario{
+	width:240px;
+	height:320px;
+	
+}
+#img-pessoa +p{
+ clear:none;  
+text-align: justify;
+padding: 1em;
+	
+}
+nav{
+margin:0;
+margin: 0;
+background-color: #444;
+text-align: right;
+height:30px;
+}
+
+nav ul{
+color: #FFF;
+list-style: none;
+}
+nav img{
+float:left;
+width:30px;
+height:30px;	
+padding-bottom:1em;
+}
+
+nav ul li{
+display: inline;
+
+}
+
+nav ul li a{
+ color: #FFF;
+text-decoration: none;
+padding: 1em;
+}
+
+nav ul li a:hover{
+background-color: #ccc;   
+color: #444;
+}
+
+#login +form{
+display:inline;
+
+}
+
+#login img{
+float:right;
+
+}
+
+fieldset{
+margin: 0 auto;
+width: 500px;
+padding: 1em;
+border: thin solid #FFF;
+border-radius: 1em;
+    
+}
+
+form div + div {
+margin-top: 1em;
+}
+
+label {
+display: inline-block;
+width: 90px;
+text-align: right;
+ }
+
+input, textarea, select{
+font: sans-serif 1em;
+width:300px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+border: thin solid #999;  
+}
+input:focus, textarea:focus {
+border-color: #000;
+}
+
+textarea {
+height: 5em;
+vertical-align: top;
+resize: vertical;
+}
+.button {
+padding-left: 90px;
+}
+button {
+margin-left: 0.5em;
+}
+
+.ckeckbox{
+text-align:left;
+}
+
+#imagemUser{
+	width:90px;
+    height: 90px;
+    border-radius: 1em;
+    box-shadow: 5px 5px 30px #444;
+
+}
+
+#form-buscar{
+float:left;
+}
+#txt-buscar{
+width:200px;
+}
+#btn-buscar{
+width:50px;	
+}
+#lbl-buscar{
+color:#fff;	
+}
+table {
+text-align: left; 
+margin: 0 auto;	
+
+}
+th, td {
+ padding: 5px;
+ border-bottom: thin solid black;
+}
+
+#img-tabela{
+width:50px;
+height:50px;	
+}
+#td-foto{
+width:50px;	
+}
+
+a, a:hover{
+text-decoration:none;
+color:black;
+}
