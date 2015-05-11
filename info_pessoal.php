@@ -28,8 +28,8 @@ if($count==0){
 
 else{
 		foreach($resultado as $usuario){
-			$usuario['arquivoFoto']=utf8_encode($usuario['arquivoFoto']);
-			$usuario['nomeCidade']=utf8_encode($usuario['nomeCidade']);
+			//$usuario['arquivoFoto']=utf8_encode($usuario['arquivoFoto']);
+			//$usuario['nomeCidade']=utf8_encode($usuario['nomeCidade']);
 		 echo "
 			<h1> Perfil do Aluno </h1>
 			<section>
