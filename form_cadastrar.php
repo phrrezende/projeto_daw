@@ -38,7 +38,7 @@ $count= count($estados);
 		<select id="estado" name="estado" required>
 		<?php 
 		foreach($estados as $estado){
-			$estado['nomeEstado']=utf8_encode($estado['nomeEstado']);
+			//$estado['nomeEstado']=utf8_encode($estado['nomeEstado']);
 			echo "<option value='$estado[idEstado]'>$estado[nomeEstado]</option>";
 		
 		}
