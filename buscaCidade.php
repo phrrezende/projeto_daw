@@ -12,7 +12,6 @@ $cidades=$operacao->fetchAll(PDO::FETCH_ASSOC);
 
 <?php 
 foreach($cidades as $cidade){
-	$cidade['nomeCidade']=utf8_encode($cidade['nomeCidade']);
 	
 	echo "<option value='$cidade[idCidade]'>$cidade[nomeCidade]</option>";
 }
