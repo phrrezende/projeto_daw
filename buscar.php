@@ -17,6 +17,7 @@ try
 	if(count($_POST)!=1){
 		include("./erroPesquisa.php");
 		die();
+//testando push
 	}
 	else{
 	    // instancia objeto PDO, conectando no mysql
