@@ -15,7 +15,7 @@ try
 	// se não foi passado 1 parâmetro via POST, desvia para a mensagem de erro
 	// "previne" acesso direto à página	
 	if(count($_POST)!=1){
-		include("./erroPesquisa.php");
+		//include("./erroPesquisa.php");
 		die();
 	}
 	else{
